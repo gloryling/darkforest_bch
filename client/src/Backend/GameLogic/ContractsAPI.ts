@@ -157,7 +157,7 @@ export class ContractsAPI extends EventEmitter {
     if (balance.lt(ContractsAPI.MIN_BALANCE)) {
       const notifsManager = NotificationManager.getInstance();
       notifsManager.balanceEmpty();
-      throw new Error('xDAI balance too low!');
+      throw new Error('bch balance too low!');
     }
 
     const gasFeeGwei = EthersBN.from(overrides?.gasPrice || '200000000');

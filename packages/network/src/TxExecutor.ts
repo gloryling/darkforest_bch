@@ -346,7 +346,6 @@ export class TxExecutor {
     let tx_hash: string | undefined = undefined;
 
     const time_exec_called = Date.now();
-
     try {
       tx.state = EthTxStatus.Processing;
 
