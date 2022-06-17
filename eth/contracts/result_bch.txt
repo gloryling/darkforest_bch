@@ -1,0 +1,103 @@
+PS E:\zaichengall\P2022\dfp\codes\darkforest-local> yarn workspace eth hardhat:prod deploy
+yarn workspace v1.22.19
+yarn run v1.22.19
+$ hardhat --network xdai deploy
+× Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) · true
+**********************
+Required keys/values:
+
+1. PLANETHASH_KEY: 115
+2. SPACETYPE_KEY: 116
+3. BIOMEBASE_KEY: 117
+**********************
+Compiling 49 files with 0.8.11
+Warning: This declaration shadows an existing declaration.
+   --> contracts/libraries/LibStorage.sol:219:48:
+    |
+219 |     function upgrades() internal pure returns (Upgrade[4][3] storage upgrades) {
+    |                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+   --> contracts/libraries/LibStorage.sol:219:5:
+    |
+219 |     function upgrades() internal pure returns (Upgrade[4][3] storage upgrades) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: This declaration shadows an existing declaration.
+   --> contracts/facets/DFGetterFacet.sol:422:37:
+    |
+422 |     function bulkGetPlanetArtifacts(uint256[] calldata planetIds)
+    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Note: The shadowed declaration is here:
+  --> contracts/facets/DFGetterFacet.sol:73:5:
+   |
+73 |     function planetIds(uint256 idx) public view returns (uint256) {
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Warning: Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.
+   --> contracts/facets/DFCoreFacet.sol:123:39:
+    |
+123 |     ) public onlyWhitelisted returns (uint256) {
+    |                                       ^^^^^^^
+
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> contracts/libraries/LibGameUtils.sol:172:9:
+    |
+172 |         SpaceType spaceType
+    |         ^^^^^^^^^^^^^^^^^^^
+
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> contracts/libraries/LibPlanet.sol:48:9:
+   |
+48 |         uint256 perlin,
+   |         ^^^^^^^^^^^^^^
+
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   --> contracts/libraries/LibPlanet.sol:244:9:
+    |
+244 |         uint256 _location,
+    |         ^^^^^^^^^^^^^^^^^
+
+
+Warning: Function state mutability can be restricted to view
+   --> contracts/libraries/LibGameUtils.sol:444:5:
+    |
+444 |     function isArtifactOnPlanet(uint256 locationId, uint256 artifactId) public returns (bool) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Generating typings for: 51 artifacts in dir: E:\zaichengall\P2022\dfp\codes\darkforest-local\packages\contracts\typechain for target: ethers-v5
+Successfully generated 78 typings!
+Compilation finished successfully
+DiamondCutFacet deployed to: 0x60b965A5B5CFBf976b448d79967081742259B6b0
+DiamondLoupeFacet deployed to: 0xf431E68988C80E9c101804F9f2f5B44A16260A0a
+OwnershipFacet deployed to: 0xBd8cFf3439C33ffe62559A57DAf0F7Ba92D27E6B
+Diamond deployed to: 0xC9c93148E12954baeaBa88448f54D4FFC8Aa257b
+DFInitialize deployed to: 0x7f4E61Fe5FEb3D840B7C12b0cb54096381B183e1
+DFCoreFacet deployed to: 0xAedF7b000B04b4fF2c64D7f75245Ae5C1f4d3e3f
+DFMoveFacet deployed to: 0xea75B7760c9900827bbC7F3Ab79BA6533295CfF6
+DFCaptureFacet deployed to: 0x9Ea523F5Af240e04b8C3Dd9b1bD89c81Baa4af2C
+DFArtifactFacet deployed to: 0xFB731cd9d16d69513Eb7EB0659dCECD6a9bAaDE2
+DFGetterFacet deployed to: 0x9f8078A699D9EcAcB47dA3F9932FAbbFEB364E06
+DFWhitelistFacet deployed to: 0xCd91B7aC26A18ddf74dF366875a604aF9a5B01f8
+DFAdminFacet deployed to: 0x8b70156E0A850541CBd8b0541aD4929a3Bb23AF2
+DFLobbyFacet deployed to: 0x404a9aA5E1Ebe1D8C58A283C2a8DE102B87439fe
+Diamond cut ok
+initBefore ok
+init ok
+initAfter ok
+Completed diamond cut
+funding whitelist with 0.05
+Sent 0.05 to diamond contract (0xC9c93148E12954baeaBa88448f54D4FFC8Aa257b) to fund drips in whitelist facet
+Whitelist balance 50000000000000000
+Processed 211 unique items from 51 ABIs
+Added 0 selectors to database
+Found 200 duplicates
+Ignored 11 items
+Deployed successfully. Godspeed cadet.
+Done in 339.69s.
+Done in 340.43s.

@@ -1,0 +1,44 @@
+Arguments: C:\Users\hasee\AppData\Roaming\npm\node_modules\yarn\lib\cli.js hardhat:prod deploy
+Directory: E:\zaichengall\P2022\dfp\codes\darkforest-local\eth
+Output:
+
+info Visit https://yarnpkg.com/en/docs/cli/workspace for documentation about this command.
+PS E:\zaichengall\P2022\dfp\codes\darkforest-local> yarn workspace eth hardhat:prod deploy
+yarn workspace v1.22.19
+yarn run v1.22.19
+$ hardhat --network xdai deploy
+¡Á Help us improve Hardhat with anonymous crash reports & basic usage data? (Y/n) ¡¤ true
+**********************
+Required keys/values:
+
+1. PLANETHASH_KEY: 115
+2. SPACETYPE_KEY: 116
+3. BIOMEBASE_KEY: 117
+**********************
+Nothing to compile
+No need to generate any newer typings.
+DiamondCutFacet deployed to: 0x99c47CE08e7dE06c7c018724Ecc4dd2A60dA5c86
+DiamondLoupeFacet deployed to: 0xaEc62f12A785177852b6e963D18eec255835fA58
+OwnershipFacet deployed to: 0xF70EADedcA807504681952103A1244434A7bdeDD
+Diamond deployed to: 0x780a30c226F817Aa923eEf7A842c2ca928d5458B
+DFInitialize deployed to: 0xEa8a4857465EaA54b11e497Ed8F1ea72B8765894
+DFCoreFacet deployed to: 0x4e71106CdD56F5AAEcE9c3e5C29A6f3292B51124
+DFMoveFacet deployed to: 0x676Ed6859DAa62C5936fCC58dAF73643Bee915a6
+DFCaptureFacet deployed to: 0x5990921e69D4D23A1Dc3CED1993aAa93E474F8A7
+DFArtifactFacet deployed to: 0x4E1827815beC3343c2f2Fb08eBFbf1C99C30a350
+DFGetterFacet deployed to: 0xC897D523F535966201B40042d92b3c6f1f02e338
+DFWhitelistFacet deployed to: 0x1053d15B5af8F29338e835AfA2B49401246204e1
+DFAdminFacet deployed to: 0x804965B8157bb0Ac216F2da0103Af9d7D8ddB835
+DFLobbyFacet deployed to: 0x3eFe4e4b3F5df39fF95784236c1d0dE08E88bFd4
+Completed diamond cut
+funding whitelist with 0.05
+Sent 0.05 to diamond contract (0x780a30c226F817Aa923eEf7A842c2ca928d5458B) to fund drips in whitelist facet
+Whitelist balance 50000000000000000
+Processed 209 unique items from 50 ABIs
+Added 0 selectors to database
+Found 198 duplicates
+Ignored 11 items
+Deployed successfully. Godspeed cadet.
+Done in 349.82s.
+Done in 351.20s.
+PS E:\zaichengall\P2022\dfp\codes\darkforest-local>
