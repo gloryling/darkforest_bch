@@ -840,6 +840,8 @@ export class ContractsAPI extends EventEmitter {
     txIntent: T,
     overrides?: providers.TransactionRequest
   ): Promise<Transaction<T>> {
+    console.log(overrides, 22222222222222222222222222222222222222);
+
     const queuedTx = await this.txExecutor.queueTransaction(txIntent, overrides);
 
     this.emit(ContractsAPIEvent.TxQueued, queuedTx);

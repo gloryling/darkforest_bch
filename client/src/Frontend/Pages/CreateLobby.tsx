@@ -182,7 +182,7 @@ export function CreateLobby({ match }: RouteComponentProps<{ contract: string }>
 
     const tx = await contract.submitTransaction(txIntent, {
       // The createLobby function costs somewhere around 12mil gas
-      gasLimit: '16777215',
+      // gasLimit: '16777215',
     });
     await tx.confirmedPromise;
   }
