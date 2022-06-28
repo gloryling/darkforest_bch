@@ -49,12 +49,12 @@ exports.NETWORK_ID = 10001;
 /**
  * The block in which the DarkForest contract was initialized.
  */
-exports.START_BLOCK = 4890531;
+exports.START_BLOCK = 5081987;
 /**
  * The address for the DarkForest contract.
  */
-exports.CONTRACT_ADDRESS = '0xC9c93148E12954baeaBa88448f54D4FFC8Aa257b';
+exports.CONTRACT_ADDRESS = '0x4B0bC5d24A517Eb90df8F2899Ef69807674e2E97';
 /**
  * The address for the initalizer contract. Useful for lobbies.
  */
-exports.INIT_ADDRESS = '0x7f4E61Fe5FEb3D840B7C12b0cb54096381B183e1';
+exports.INIT_ADDRESS = '0x3121Dd1667E3AAFe1B61e50d6f9233D155D15Ac2';
