@@ -2908,7 +2908,7 @@ class GameManager extends EventEmitter {
 
       // Always await the submitTransaction so we can catch rejections
       const tx = await this.contractsAPI.submitTransaction(txIntent, {
-        // gasLimit: 5000000,
+        gasLimit: 5000000,
         value: bigInt(1000000000000000000)
           .multiply(2 ** planet.hatLevel)
           .toString(),
